@@ -1,0 +1,20 @@
+1. function typeOf() {}
+
+typeOf() function 的作用:
+console.log(typeOf("")); // string
+console.log(typeOf([])); // array
+console.log(typeOf(null)); // null
+console.log(typeOf("", [], null)); // ["string", "array", "null"]
+
+2. function isArray() {}
+
+基于typeOf() function
+isArray() function 的作用:
+console.log(isArray([])); // true
+console.log(isArray({})); // false
+console.log(isArray([], {})); // [true, false]
+
+3. Element Selector Like jQuery
+
+YourLibraryNameOrAnotherNameYouWant("selector") = document.querySelectorAll("selector")
+YourLibraryNameOrAnotherNameYouWant("selector", false) = document.querySelector("selector")
